@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        setProperty("staging_url", "http://10.95.21.14:6065/api/Service/VirtualPackCreation/")
+        setProperty("staging_url", "")
         mStateRepository.getWeather()?.enqueue(object : Callback<GetStatelist?> {
             override fun onFailure(call: Call<GetStatelist?>, t: Throwable) {
                 Toast.makeText(this@MainActivity, "" + t.message, Toast.LENGTH_SHORT).show()

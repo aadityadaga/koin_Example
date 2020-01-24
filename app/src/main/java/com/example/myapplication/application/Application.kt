@@ -10,6 +10,5 @@ class KoinApplication : Application() {
     override fun onCreate() {
         super.onCreate()
         startKoin(this, listOf(networkmodule, statemodule))
-        //  setProperty("staging_url", "http://10.95.21.14:6065/api/Service/VirtualPackCreation/")
     }
 }
